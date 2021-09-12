@@ -23,11 +23,11 @@ class MainActivity : AppCompatActivity() {
 
     fun calcularIMC(): Float {
 
-        val altura : TextView = findViewById(R.id.AlturaText) as TextView;
-        val peso : TextView = findViewById(R.id.pesoText) as TextView;
+        val altura : TextView = findViewById(R.id.AlturaText) as TextView
+        val peso : TextView = findViewById(R.id.pesoText) as TextView
 
-        var alturaFloat = (altura.text.toString()).toFloat();
-        var pesoFloat = (peso.text.toString()).toFloat();
+        var alturaFloat = (altura.text.toString()).toFloat()
+        var pesoFloat = (peso.text.toString()).toFloat()
         var IMC =  pesoFloat/(alturaFloat * alturaFloat)
 
         return IMC;
